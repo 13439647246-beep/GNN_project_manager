@@ -8,4 +8,8 @@
     <orderEntry type="jdk" jdkName="D:\forWork\Python\anaconda_2026.07\envs\forCUDA12-8" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="versionSpecifier" value="大于或等于 (&gt;=x.y.z)" />
+    <option name="removeUnused" value="true" />
+  </component>
 </module>
