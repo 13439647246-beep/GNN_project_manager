@@ -7,8 +7,6 @@ from src.utils.registry import register_model
 from models.KPGN.layer import KPGNLayer
 from models.KPGN.prepare import (normalize_adj, build_adjacency_dict_sparse, similary_sampling,
                                  torch_adj_to_nx, bs_max_kplex, runMain, seeds_to_labels)
-from src.ops.linalg import modularity_score, modularity_matrix
-from utils import device
 
 
 @register_model("KPGN")
