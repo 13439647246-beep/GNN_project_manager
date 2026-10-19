@@ -1,0 +1,1 @@
+# 文件读写：yaml/json/pickle 存取

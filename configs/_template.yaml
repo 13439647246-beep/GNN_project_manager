@@ -1,0 +1,34 @@
+# ============================================================
+# configs/_base.yaml
+# 全局公共配置：所有模型的 yaml 都继承这里。
+# 各模型 yaml 只需写"与这里不同的部分"。
+# 未在这里列出的字段，最终由 DEFAULT_ARG 兜底。
+# ============================================================
+
+train:
+  epochs: 200          # 训练轮数
+  seed: 42             # 全局随机种子
+  device: auto         # auto / cuda / mps / cpu
+  early_stop: 100      # 早停耐心值，null 表示不启用
+  log_every: 1         # 每多少轮记录一次日志
+  grad_clip: null      # 梯度裁剪阈值，null 表示不裁剪
+
+optim:
+  lr: 0.01             # 学习率
+  weight_decay: 0.0005   # 权重衰减
+  scheduler: null      # null / "cosine" / "step"
+
+data:
+  root: data           # 数据根目录（下载到 ./data/）
+  split: public        # public / random / train_rest / test_rest
+
+save:
+  monitor: val_acc     # 用哪个指标判断"最佳"
+  mode: max            # max 越大越好，min 越小越好
+
+log:
+  level: INFO          # DEBUG / INFO / WARNING
+  backend: csv         # csv / tensorboard / both
+
+exp:
+  output_dir: runs     # 训练产物输出根目录

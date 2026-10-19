@@ -1,0 +1,8 @@
+# 数据集缓存路径
+/data/*
+# 运行日志路径
+/runs/*
+# 超参数设置路径
+/configs/*
+!/configs/_base.yaml
+!/configs/_template.yaml
